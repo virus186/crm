@@ -1,0 +1,27 @@
+.productContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.productWrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+}
+
+.actionIcons{
+    display: flex;
+}
+
+.actionIcons>a{
+    color: #000;
+    margin:0 5px;
+}
+
+.actionIcons>a:hover{
+    color: #BB86FC;
+    transition: 0.2s;
+}

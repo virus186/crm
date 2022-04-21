@@ -1,0 +1,84 @@
+.navcontailner {
+  position: fixed;
+  width: 220px;
+  height: 100%;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.navwrapper {
+  padding: 10px;
+  z-index: 1;
+}
+
+.navwrapper > ul {
+  margin-top: 20px;
+  padding-left: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  gap: 20px;
+  font-weight: bold;
+}
+
+.navwrapper > ul > a > li {
+  list-style: none;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navwrapper > ul > a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navwrapper > ul > a:hover {
+  font-size: 18px;
+  color: #BB86FC;
+  transition: 0.2s;
+}
+
+.navwrapper > ul > a > li:hover {
+  font-size: 18px;
+  color: #BB86FC;
+  transition: 0.2s;
+}
+
+.logo {
+  padding: 10px;
+  padding-left: 15px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .navcontailner {
+    width: 70px;
+  }
+
+  .logo > h2 {
+    opacity: 0;
+  }
+
+  .logo {
+    background: url("../public/logo-sm.png");
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 0px;
+    background-size: contain;
+  }
+  .navwrapper > ul {
+    gap: 5px;
+  }
+  .navwrapper > ul > a > li:hover {
+    color: #BB86FC;
+  }
+  .navwrapper > ul > a >li>span {
+    opacity: 0;
+  }
+}

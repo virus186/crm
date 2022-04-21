@@ -1,0 +1,38 @@
+{
+  "name": "crm",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/styled": "^11.8.1",
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@react-icons/all-files": "^4.1.0",
+    "apexcharts": "^3.35.0",
+    "chart.js": "^3.7.1",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.10",
+    "mui-datatables": "^4.2.2",
+    "next": "12.1.4",
+    "next-connect": "^0.12.2",
+    "next-images": "^1.8.4",
+    "react": "18.0.0",
+    "react-apexcharts": "^1.4.0",
+    "react-chartjs-2": "^4.1.0",
+    "react-dom": "18.0.0",
+    "react-top-loading-bar": "^2.1.0"
+  },
+  "devDependencies": {
+    "eslint": "8.13.0",
+    "eslint-config-next": "12.1.4"
+  }
+}

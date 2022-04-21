@@ -1,0 +1,11 @@
+.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 215px;
+}
+
+@media only screen and (max-width: 768px) {
+    .mainContainer {
+      margin-left: 80px;
+    }
+}
