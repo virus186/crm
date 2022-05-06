@@ -1,6 +1,6 @@
 import Navbar from './Navbar'
 import Header from './Header'
-import styles from '../../../styles/Layout.module.css'
+import styles from '../../../../styles/Layout.module.css'
 
 
 export default function Layout({ children }) {

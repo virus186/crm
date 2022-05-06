@@ -5,6 +5,12 @@ const nextConfig = {
 
 module.exports = {
   nextConfig,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  images: {
+    domains: ['lh3.googleusercontent.com'],
+  },
   env: {
     PASS_SEC: "KHGVBhshnvCGHCHVUKTjgzc151654HIJVCJHB1564KHKVCSGV15dc465zc46cdczGKJCHSVSB",
 

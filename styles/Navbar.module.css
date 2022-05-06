@@ -2,7 +2,7 @@
   position: fixed;
   width: 220px;
   height: 100%;
-  background-color: #000000;
+  background-color: #434949;
   color: #ffffff;
 }
 
@@ -26,6 +26,10 @@
   list-style: none;
   font-size: 1rem;
   text-decoration: none;
+  color: #91C24D;
+}
+
+.navwrapper > ul > a > li > span {
   color: #ffffff;
 }
 
@@ -36,13 +40,13 @@
 
 .navwrapper > ul > a:hover {
   font-size: 18px;
-  color: #BB86FC;
+  color: #2CD3C9;
   transition: 0.2s;
 }
 
 .navwrapper > ul > a > li:hover {
   font-size: 18px;
-  color: #BB86FC;
+  color: #2CD3C9;
   transition: 0.2s;
 }
 
@@ -76,7 +80,7 @@
     gap: 5px;
   }
   .navwrapper > ul > a > li:hover {
-    color: #BB86FC;
+    color: #2CD3C9;
   }
   .navwrapper > ul > a >li>span {
     opacity: 0;

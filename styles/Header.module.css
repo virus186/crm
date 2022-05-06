@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     height: 70px;
-    background-color: #000000;
+    background-color: #434949;
     margin-left: 210px;
     /* justify-content: space-between; */
 }
@@ -36,6 +36,7 @@
     height: 40px;
     border-radius: 50%;
     cursor: pointer;
+    color: #ffffff;
 }
 
 @media only screen and (max-width:768px) {

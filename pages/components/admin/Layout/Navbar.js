@@ -1,14 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChartLine, faComputer, faFileCircleCheck, faGears, faListAlt, faTachometerAlt, faUsers, faUsersGear } from '@fortawesome/free-solid-svg-icons'
 import React from 'react'
-import styles from '../../../styles/Navbar.module.css'
+import styles from '../../../../styles/Navbar.module.css'
 import Link from 'next/link'
 
 function Navbar() {
   return (
     <div className={styles.navcontailner}>
         <div className={styles.logo}>
-            <h2>ASA CRM</h2>
+            <h2>Kiraanaghar</h2>
         </div>
         <div className={styles.navwrapper}>
             <ul>
