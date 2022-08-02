@@ -24,8 +24,8 @@ const Header = () => {
             </div>
         </div>
 
-        {session && <a href="#" onClick={handleSignout} className="btn-signin">Sign out</a>  } 
-        {!session && <a href="#" onClick={handleSignin}  className="btn-signin">Sign in</a>  } 
+        {session && <a href="#" onClick={handleSignout} className={styles.signInbtn}>Sign out</a>  } 
+        {!session && <a href="#" onClick={handleSignin}  className={styles.signInbtn}>Sign in</a>  } 
 
         <div className={styles.profile}>
             <div className={styles.profileImage}>

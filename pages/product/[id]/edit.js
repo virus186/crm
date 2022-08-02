@@ -1,8 +1,8 @@
 import React from 'react'
 
-const editProduct = () => {
+const editProduct = (id) => {
   return (
-    <div>editProduct</div>
+    <div>editProduct ${id}</div>
   )
 }
 

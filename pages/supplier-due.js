@@ -17,7 +17,7 @@ const columns = ["Name", "Email", "Mobile", "Address", "Due", "Actions"];
 
 const SupplierDue = ({suppliers,size}) => {
   let data = []
-  /* if(suppliers){
+  if(suppliers){
   suppliers = JSON.parse(suppliers)
   
   suppliers.map((item)=>{
@@ -34,14 +34,14 @@ const SupplierDue = ({suppliers,size}) => {
     data2.push(<div className={styles.actionIcons}><Link href={view_url} ><a><FontAwesomeIcon icon={faExpandAlt} style={{width:"15px", cursor:"pointer"}} /></a></Link> <Link href={edit_url} ><a><FontAwesomeIcon icon={faEdit} style={{width:"15px", cursor:"pointer"}} /></a></Link> <Link href={delete_url} ><a><FontAwesomeIcon icon={faTrashCan} style={{width:"15px", cursor:"pointer"}} /></a></Link></div>)
     data.push(data2)
 
-  })} */
-  data = [
+  })}
+  /* data = [
     ["Supplier 1", "supplier1@test.com", "8356982415", "Mumbai", "1000", "View Edit Delete"],
     ["Supplier 2", "supplier2@test.com", "8356982415", "Mumbai", "1000", "View Edit Delete"],
     ["Supplier 3", "supplier3@test.com", "8356982415", "Mumbai", "1000", "View Edit Delete"],
     ["Supplier 4", "supplier4@test.com", "8356982415", "Mumbai", "1000", "View Edit Delete"],
     ["Supplier 5", "supplier5@test.com", "8356982415", "Mumbai", "1000", "View Edit Delete"],
-   ];
+   ]; */
   return (
     <div>
       <Head>
@@ -67,7 +67,7 @@ const SupplierDue = ({suppliers,size}) => {
   )
 }
 
-/* export async function getServerSideProps(context) {
+export async function getServerSideProps(context) {
   if(!mongoose.connections[0].readyState){
     mongoose.connect(process.env.MONGO_URL)
 }
@@ -75,7 +75,7 @@ const SupplierDue = ({suppliers,size}) => {
   let suppliers = await Suppliers.find({due: { $gt: 0 }})
 
   return { props: { supplier: JSON.stringify(suppliers), size: suppliers.length } };
-} */
+}
 
 
 export default SupplierDue

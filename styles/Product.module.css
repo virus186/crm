@@ -1,27 +1,166 @@
-.productContainer{
-    display: flex;
-    flex-wrap: wrap;
+.productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.productWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+}
+
+.actionIcons {
+  display: flex;
+}
+
+.actionIcons > a {
+  color: #000;
+  margin: 0 5px;
+}
+
+.actionIcons > a:hover {
+  color: #bb86fc;
+  transition: 0.2s;
+}
+
+.btn {
+  background-color: #090168;
+  border-radius: 4px 24px;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 10px 10px;
+  margin: 0px 10px;
+  color: #fff;
+  width: fit-content;
+  cursor: pointer;
+  
+}
+
+.SaveBtn {
+  background-color: green;
+  border-radius: 4px 20px;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 10px 10px;
+  margin: 0px 10px;
+  color: #fff;
+  width: fit-content;
+  cursor: pointer;
+  
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.pageTitle {
+  font-size: 1.5rem;
+  color: #000;
+  width: auto;
+  padding-left: 20px;
+}
+
+/* Add Product Form Starts */
+
+.btnMainDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: sticky;
+  top: 0;
+  right: 10px;
+}
+
+.inputContainer {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  align-items: center;
+}
+
+.inputBox {
+  font-size: 1rem;
+  
+  /*  flex: 0.7; */
+  line-height: 2rem;
+  border: 1px solid #d3d3d3;
+  width: 40%;
+  background: #fff;
+  border-radius: 25px;
+  /* padding: 0 5px; */
+}
+
+.inputBox>input{
+    border: none;
     width: 100%;
-    margin-top: 10px;
+    line-height: 2rem;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-radius: 25px;
 }
 
-.productWrapper{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+.inputBox>textarea{
+    border: none;
     width: 100%;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 0 10px;
+    border-radius: 25px;
 }
 
-.actionIcons{
-    display: flex;
+.inputBox>select{
+    border: none;
+    width: 100%;
+    height: 2rem;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-radius: 25px;
 }
 
-.actionIcons>a{
-    color: #000;
-    margin:0 5px;
+
+.inputBox>input:focus{
+    border: none;
 }
 
-.actionIcons>a:hover{
-    color: #BB86FC;
-    transition: 0.2s;
+.inputBox>textarea:-ms-keyboard-active{
+    border: none;
+}
+
+.mt20{
+    margin-top: 20px;
+}
+
+
+.inputTitle{
+    flex: 0.4;
+    padding: 5px 10px;
+    margin: 5px 10px;
+    font-size: 1.2rem;
+    
+}
+
+.formContainer {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  height: auto;
+  margin-top: 10px;
+}
+
+.container {
+  padding: 15px;
+  background: #fff;
+  border-radius: 12px;
+  width: 80%;
+  height: 100%;
+  box-shadow: 0px 3px 10px rgb( 0, 0, 0 / 0.8);
+  margin-top: 10px;
 }

@@ -3,27 +3,26 @@ import Product from "../../../models/Product";
 
 const handler = async (req,res) => {
     if(req.method == 'POST'){
-        for(let i=0; i< req.body.length; i++){
+        const data = JSON.parse(req.body)
             let p = new Product({
-                title: req.body[i].title,
-                sku: req.body[i].sku,
-                desc: req.body[i].desc,
-                hsn_code: req.body[i].hsn_code,
-                img: req.body[i].img,
-                categories: req.body[i].categories,
-                size: req.body[i].size,
-                color: req.body[i].color,
-                quantity: req.body[i].quantity,
-                isManageble: req.body[i].isManageble,
-                price: req.body[i].price,
-                p_price: req.body[i].p_price,
+                title: data.title,
+                sku: data.sku,
+                desc: data.desc,
+                hsn_code: data.hsn_code,
+                img: data.img,
+                categories: data.categories,
+                size: data.size,
+                color: data.color,
+                quantity: data.quantity,
+                isManageble: data.isManageble,
+                price: data.price,
+                p_price: data.p_price,
             })
 
             await p.save()
 
-        }
 
-        res.status(201).json({success:"success"})
+        res.status(201).json({success:"success",data : p})
 
 
     } else {

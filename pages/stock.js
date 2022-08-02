@@ -21,7 +21,7 @@ const options = {
 
 const Stocks = ({ products, size }) => {
   let data = [];
-  /* if (products) {
+  if (products) {
     products = JSON.parse(products);
     products.map((item) => {
       let view_url = "/product/" + item._id;
@@ -62,14 +62,14 @@ const Stocks = ({ products, size }) => {
       );
       data.push(data2);
     });
-  } */
-  data = [
+  }
+  /* data = [
     ["Testing Product 1", "testing_product_1", "Testing Product 1 Description", "1000", "View Edit Delete"],
     ["Testing Product 2", "testing_product_2", "Testing Product 2 Description", "1000", "View Edit Delete"],
     ["Testing Product 3", "testing_product_3", "Testing Product 3 Description", "1000", "View Edit Delete"],
     ["Testing Product 4", "testing_product_4", "Testing Product 4 Description", "1000", "View Edit Delete"],
     ["Testing Product 5", "testing_product_5", "Testing Product 5 Description", "1000", "View Edit Delete"],
-   ];
+   ]; */
   return (
     <div>
       <Head>
@@ -94,7 +94,7 @@ const Stocks = ({ products, size }) => {
     </div>
   );
 };
-/* 
+
 export async function getServerSideProps(context) {
   if (!mongoose.connections[0].readyState) {
     mongoose.connect(process.env.MONGO_URL);
@@ -105,6 +105,6 @@ export async function getServerSideProps(context) {
   return {
     props: { products: JSON.stringify(products), size: products.length },
   };
-} */
+}
 
 export default Stocks;
