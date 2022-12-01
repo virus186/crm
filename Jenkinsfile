@@ -7,12 +7,11 @@ pipeline {
         stage('Build') {
             steps {
                 bat 'npm i --force'
-                bat 'npm run build'
             }
         }
         stage('Start') {
                     steps {
-                        bat 'npm run start'
+                        bat 'npm run dev'
                     }
                 }
                
