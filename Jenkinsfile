@@ -1,10 +1,5 @@
 pipeline {
-    agent {
-        node {
-            image 'node:18-alpine'
-            args '-p 3000:3000'
-        }
-    }
+    agent any
      environment {
             CI = 'true'
         }
