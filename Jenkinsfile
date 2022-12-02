@@ -4,16 +4,15 @@ pipeline {
             CI = 'true'
         }
     stages {
-        stage('Build') {
+        stage('Install') {
             steps {
                 bat 'npm i --force'
             }
         }
-        stage('Start') {
-                    steps {
-                        bat 'npm run dev'
-                    }
-                }
-               
+        stage('Dev') {
+            steps {
+                bat 'npm run dev'
+            }
+        }       
     }
 }
